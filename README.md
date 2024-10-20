@@ -1,32 +1,32 @@
-# Discord-bot
+# Discord-Bot
 
-This is a Discord bot that utilizes the OpenAI API to provide chat responses using the ChatGPT model. The bot is implemented using the Discord.py library.
+## Introduction
+This is a Discord bot that uses Discord API to load, combine, and ingest messages, and LlamaIndex to create and query indexes.
 
 ## Prerequisites
+1. Python 3.12+
+2. Discord bot token
+3. OpenAI API key
 
-- Python 3.12+
-- `discord.py` library
-- OpenAI API key
-- Discord bot token
+## Setup
 
-## Installation
-
-1. Clone this repository:
-    ```sh
-    git clone https://github.com/Swastikmohanty2k/Discord-bot.git
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/Swastikmohanty2k/Discord-bot
     cd Discord-bot
     ```
 
-2. Install the required Python packages:
-    ```sh
-    pip install discord.py openai 
+2. **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
     ```
 
-3. Set up your environment variables:
-    ```sh
-    export OPENAI_API_KEY='your_openai_api_key'
-    export BOT_TOKEN='your_discord_bot_token'
-    export CHANNEL_IDS='comma_separated_channel_ids'
+3. **Environment variables:**
+    Create a `.env` file in the root directory and add your configuration details:
+    ```env
+    BOT_TOKEN=your-discord-bot-token
+    OPENAI_API_KEY=your-openai-api-key
+    CHANNEL_IDS=channel_id1,channel_id2
     ```
 
 ## Usage
