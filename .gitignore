@@ -2,3 +2,5 @@ myenv
 .env
 *.ipynb
 *__pycache__
+vector_store
+cache_msg.txt
